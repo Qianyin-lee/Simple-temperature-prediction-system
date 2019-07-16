@@ -1,0 +1,13 @@
+<view class="container">
+  <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+  <view class="section">
+  <picker mode="date" value="{{pickdate}}" start="1980-01-01" end="2019-12-31" bindchange="bindDateChange">
+    <view class="picker">
+      当前选择日期: {{pickdate}}
+    </view>
+  </picker>
+  </view>
+  <button class='btn1' hover-class='btn1_hover' bindtap="btn1click">
+    <view>查询</view>
+ </button>
+</view>
